@@ -61,10 +61,38 @@ Commit your code regularly and meaningfully. This helps both you (in case you ev
 Be prepared to demonstrate your understanding of this week's concepts by answering questions on the following topics. You might prepare by writing down your own answers before hand.
 
 1. The core features of Node.js and Express and why they are useful.
-1. Understand and explain the use of Middleware?
-1. The basic principles of the REST architectural style.
-1. Understand and explain the use of Express Routers.
-1. Describe tooling used to manually test the correctness of an API.
+
+  - Node.js and express are used to build scalable applications. What makes Node.js so useful is that it is executed server-side, which means that there is almost no functions within it that directly perform I/O operations, which in return means fewer blocks. 
+
+
+2. Understand and explain the use of Middleware?
+
+  - In node, middleware are functions that have access to the (req, res) objects, as well as the next middleware in the app's req cycle. 
+  - Middleware can:
+    - execute code, end the req-res cycle, or call the next middleware
+  - Middleware is most commonly used used for authentication, validation, and logging
+
+
+3. The basic principles of the REST architectural style.
+
+  - Representational State Transfer (REST) is a style of architecture that describes how network resources are defined and addressed.
+  - It is characterized by:
+    - State and functionality being divided into distributed resources
+    - Each resource being uniquely addressable with a minimal set of commands (GET, POST, PUT, DELETE, etc.)
+    - Is client/server, stateless, layered, and supports caching
+
+
+4. Understand and explain the use of Express Routers.
+
+  - Express routers are used to control how the application's endpoints respond to client req's. Each routing method of the app object corresponds to an HTTP method (GET, POST, etc.)
+  - The routing methods specify a callback (aka handler) that is called when the app receives a req to a specified endpoint and HTTP method. 
+
+
+5. Describe tooling used to manually test the correctness of an API.
+
+  - Postman allows the developer to send crafted api calls to our API in order to insure that the responses from the API our correct. 
+
+
 
 You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade.
 
